@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional Portfolio - UI/UX Designer & Developer"
+    />
+    <title>Portfolio - Kurniawan Dwi Saputra</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='18' stroke='url(%23logoGradient)' stroke-width='2' fill='none'/%3E%3Cpath d='M12 16L20 24L28 16' stroke='url(%23logoGradient)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='20' cy='20' r='3' fill='url(%23logoGradient)'/%3E%3Cdefs%3E%3ClinearGradient id='logoGradient' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:hsl(var(--primary))'/%3E%3Cstop offset='100%25' style='stop-color:hsl(var(--secondary))'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="loader-circle"></div>
+        <div class="loader-text">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="20"
+                cy="20"
+                r="18"
+                stroke="url(#logoGradient)"
+                stroke-width="2"
+                fill="none"
+              />
+              <path
+                d="M12 16L20 24L28 16"
+                stroke="url(#logoGradient)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle cx="20" cy="20" r="3" fill="url(#logoGradient)" />
+              <defs>
+                <linearGradient
+                  id="logoGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" style="stop-color: hsl(var(--primary))" />
+                  <stop
+                    offset="100%"
+                    style="stop-color: hsl(var(--secondary))"
+                  />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>Wawan</span>
+          </a>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#portfolio" class="nav-link">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="hero-greeting typewriter" id="greeting"
+                >Halo, Saya</span
+              >
+              <span class="hero-name" id="heroName" style="opacity: 0"
+                >Kurniawan Dwi Saputra</span
+              >
+              <span class="hero-role" id="heroRole" style="opacity: 0"
+                >Build Your Website & Mobile Apps With Me</span
+              >
+            </h1>
+            <p class="hero-description">
+              Saya adalah seorang lulusan SMA jurusan IPS yang memiliki
+              ketertarikan pada pembuatan website dan aplikasi mobile. Saya
+              adalah seorang pemula dan selalu bersemangat untuk menghadapi
+              tantangan baru.
+            </p>
+            <div class="hero-buttons">
+              <a href="#portfolio" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="hero-image-container">
+              <div class="hero-image-bg"></div>
+              <div class="hero-image-overlay">
+                <img src="assets/images/hero-image.jpg" alt="Hero Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll">
+          <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Tentang Saya</h2>
+          <p class="section-subtitle">Kenali lebih dekat denganku!</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Saya seorang pemimpi yang ingin jadi seorang developer</h3>
+            <p>
+              Saya adalah seorang lulusan SMA, memiliki pengalaman bekerja
+              sebagai Crew Outlet di Restoran CFC dan sebagai Crew di Restoran
+              CFC saya juga pernah Magang di Pemerintahan Desa sebagai
+              Administrasi. Saya adalah seorang pemula dan selalu bersemangat
+              dan berdedikasi untuk menjadi seorang developer.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Projects Completed in my dream</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">Happy Clients in my dream</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years Experience in my dream</div>
+              </div>
+            </div>
+          </div>
+          <div class="about-skills">
+            <h4>Skills & Expertise</h4>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <span>Website Development</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-android"></i>
+                <span>App Developer</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Responsive Design</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-user-tie"></i>
+                <span>Administration</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-microsoft"></i>
+                <span>Microsoft Office</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-clock"></i>
+                <span>Time Management</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-language"></i>
+                <span>Etika Bahasa</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-user-friends"></i>
+                <span>Teamwork</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Layanan</h2>
+          <p class="section-subtitle">Apa yang bisa saya lakukan untuk Anda</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Website Development</h3>
+            <p>
+              Membuat website yang intuitif dan menarik dengan fokus pada
+              pengalaman pengguna dan kemudahan penggunaan.
+            </p>
+            <div class="service-features">
+              <span>HTML/CSS/JS</span>
+              <span>React/Next.js</span>
+              <span>Responsive Design</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fab fa-android"></i>
+            </div>
+            <h3>Android App Developer</h3>
+            <p>
+              Membuat aplikasi android yang menarik interaktif mudah digunakan
+              dengan mengutamakan kenyamanan penggunanya.
+            </p>
+            <div class="service-features">
+              <span>Mobile UI</span>
+              <span>Flutter/Dart</span>
+              <span>App Design</span>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h3>Joki Tugas</h3>
+            <p>
+              Joki tugas adalah jasa yang membantu Anda menyelesaikan tugas
+              sekolah atau kuliah dengan cepat dan efektif untuk kalian yang
+              sibuk dan kepala puyeng.
+            </p>
+            <div class="service-features">
+              <span>Ramah & Tidak Toxic</span>
+              <span>Frendly & Professional</span>
+              <span>Murah & Terjangkau</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Portfolio</h2>
+          <p class="section-subtitle">My recent work</p>
+        </div>
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Website</button>
+          <button class="filter-btn" data-filter="mobile">Android App</button>
+          <button class="filter-btn" data-filter="branding">Joki Tugas</button>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <div class="portfolio-image-placeholder web-project"></div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>E-commerce Platform</h3>
+                  <p>Modern e-commerce website with clean design</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="mobile">
+            <div class="portfolio-image">
+              <div class="portfolio-image-placeholder mobile-project"></div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Fitness App</h3>
+                  <p>Mobile app design for fitness tracking</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="branding">
+            <div class="portfolio-image">
+              <div class="portfolio-image-placeholder brand-project"></div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Brand Identity</h3>
+                  <p>Complete brand identity for startup</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <div class="portfolio-image-placeholder web-project-2"></div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Portfolio Website</h3>
+                  <p>Personal portfolio with modern design</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="mobile">
+            <div class="portfolio-image">
+              <div class="portfolio-image-placeholder mobile-project-2"></div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Travel App</h3>
+                  <p>UI design for travel booking application</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <div class="portfolio-image-placeholder web-project-3"></div>
+              <div class="portfolio-overlay">
+                <div class="portfolio-content">
+                  <h3>Dashboard Design</h3>
+                  <p>Analytics dashboard with data visualization</p>
+                  <div class="portfolio-links">
+                    <a href="#" class="portfolio-link"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                    <a href="#" class="portfolio-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Hubungi Saya</h2>
+          <p class="section-subtitle">
+            Jika Anda memiliki pertanyaan atau ingin bekerja sama, silakan
+            hubungi saya.
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Hubungi Saya</h3>
+            <p>
+              Saya selalu terbuka untuk peluang baru dan proyek menarik. Apapun
+              pertanyaan Anda atau hanya ingin mengatakan salam, silakan hubungi
+              saya!
+            </p>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <i class="fas fa-envelope"></i>
+                <span>kurdwisap04@gmail.com</span>
+              </div>
+              <div class="contact-detail">
+                <i class="fab fa-whatsapp"></i>
+                <span>+6282134528638</span>
+              </div>
+              <div class="contact-detail">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Brebes, Indonesia</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+              <span class="form-error" id="subject-error"></span>
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading" style="display: none">
+                <i class="fas fa-spinner fa-spin"></i> Sending...
+              </span>
+            </button>
+            <div class="form-success" id="form-success" style="display: none">
+              <i class="fas fa-check-circle"></i>
+              <span>Message sent successfully!</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-bg">
+        <div class="footer-pattern"></div>
+      </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-main">
+            <div class="footer-brand">
+              <div class="footer-logo">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="18"
+                    stroke="url(#footerLogoGradient)"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 16L20 24L28 16"
+                    stroke="url(#footerLogoGradient)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="20"
+                    cy="20"
+                    r="3"
+                    fill="url(#footerLogoGradient)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="footerLogoGradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="100%"
+                    >
+                      <stop offset="0%" style="stop-color: #ffffff" />
+                      <stop offset="100%" style="stop-color: #e2e8f0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <h3>Kurniawan Dwi Saputra</h3>
+              </div>
+              <p class="footer-description">
+                Seorang pemula yang sedang belajar pemrograman web dan
+                pemrograman mobile apps.
+              </p>
+              <div class="footer-social">
+                <a href="#" class="social-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer-nav">
+              <div class="footer-section">
+                <h4>Navigation</h4>
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                  <li><a href="#services">Web Development</a></li>
+                  <li><a href="#services">Android App Developer</a></li>
+                  <li><a href="#services">Joki Tugas</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                  <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>kurdwisap04@gmail.com</span>
+                  </li>
+                  <li>
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+6282134528638</span>
+                  </li>
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Brebes, Indonesia</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="footer-copyright">
+              <p>&copy; 2025 Kurniawan Dwi Saputra. All rights reserved.</p>
+            </div>
+            <div class="footer-privacy">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+  </body>
+</html>
